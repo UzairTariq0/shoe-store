@@ -14,7 +14,7 @@ function Product() {
                             className="link" 
                             to={`/product/${keyName}`}>
                                 <h4 className='shoe-name'>{shoe.name}</h4>
-                                <img src={shoe.img} height={150} alt="shoe" />
+                                <img src={shoe.img} height={400} alt="shoe" />
                     </Link>)
                 })}
             </div>
