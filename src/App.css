@@ -1,38 +1,66 @@
-.App {
+body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.productContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.productContainer>.link {
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 10px #463636;
+  margin: 10px;
+  transition: all 400ms ease;
+}
+
+.productContainer>.link:hover {
+  background-color: lightgray;
+}
+
+.nav-item {
+  margin-left: 34px;
+  font-size: 26px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 500;
+  padding-left: 23px;
+}
+
+.shoe-name {
+  color: black;
+  text-decoration: underline;
+}
+
+@media (max-width: 599px) {
+  .productContainer {
+    justify-content: center;
+  }
+}
+
+.c-img {
+  margin-top: 90px ;
+  height: 500px;
+}
+
+.card  {
+  display: flex;
+  width: 18rem;
+}
+
+.card-container {
+  margin-top: 12px;
+  display: flex;
+  gap: 3rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shoimg {
+height: 210px;
 }
