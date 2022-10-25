@@ -7,11 +7,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: 28px;
+  justify-content: center;
 }
 
-.productContainer>.link {
+.productContainer >.link {
   text-align: center;
-  width: 300px;
+  width: 600px;
   box-shadow: 0 0 10px #463636;
   margin: 10px;
   transition: all 400ms ease;
@@ -64,3 +65,18 @@ body {
 .shoimg {
 height: 210px;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(92, 91, 91);
+  border-radius: 1rem;
+  border: .5rem solid transparent;
+}
+
